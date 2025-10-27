@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arachide</title>
+  <link rel="stylesheet" href="arachide.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="mro.png" class="logo_m" alt="Logo">
+      </div>
+      <nav class="nav">
+  <ul>
+    <li><a href="king.html">Accueil</a></li>
+   <li><a href="services.html">Services</a></li>
+    <li><a href="A propos.html">À propos</a></li>
+    <li> <a href="Conctact.html">Conctact</a></li>
+      
+      </div>
+    
+  </ul>
+</nav>
+    </div>
+  </header>
+    <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="80.webp" alt="Photo 1">
+      </div>
+      <div class="slide">
+        <img src="83.jpg" alt="Photo 2">
+      </div>
+      <div class="slide">
+        <img src="84.jpg" alt="Photo 3">
+      </div>
+    </div>
+    <div class="navigation">
+      <span class="bar" onclick="moveSlider(0)"></span>
+      <span class="bar" onclick="moveSlider(1)"></span>
+      <span class="bar" onclick="moveSlider(2)"></span>
+    </div>
+  </div>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelector('.slider');
+    const bars = document.querySelectorAll('.bar');
+
+    function moveSlider(i) {
+      index = i;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+      bars.forEach(bar => bar.classList.remove('active'));
+      bars[index].classList.add('active');
+    }
+
+    // Auto défilement toutes les 4 secondes
+    setInterval(() => {
+      index = (index + 1) % 3;
+      moveSlider(index);
+    }, 4000);
+  </script>
+<main class="tomate-bienfaits">
+  <!-- Section 1 -->
+  <section class="bienfait">
+    <div class="texte">
+      <h1>Les vertus nutritionnelles exceptionnelles du piment</h1>
+      <p>
+        Le piment est un véritable trésor nutritionnel qui, au-delà de son goût piquant, apporte une multitude de bienfaits à l’organisme. Riche en vitamines C, A, E, et en antioxydants, il protège les cellules contre le stress oxydatif et renforce les défenses immunitaires. Sa forte teneur en vitamine C contribue à la production de collagène, essentiel pour la peau, les os et les tissus. La présence de la capsaïcine, son principe actif, favorise la circulation sanguine et stimule le métabolisme de manière naturelle. Le piment contient aussi des minéraux importants tels que le potassium, le fer et le magnésium, indispensables à la bonne santé des muscles et du cœur. Il est également une bonne source de fibres alimentaires, favorisant un transit intestinal régulier et un bon équilibre digestif.  
+    En plus d’être faible en calories, il offre une sensation de satiété rapide, ce qui peut être bénéfique dans le cadre d’une alimentation équilibrée. Les antioxydants du piment, comme les caroténoïdes et les flavonoïdes, jouent un rôle clé dans la prévention du vieillissement cellulaire et dans la protection contre certaines maladies chroniques. Plusieurs études scientifiques ont démontré que la consommation modérée de piment contribue à réduire les risques de cancer du côlon et de maladies inflammatoires. En Asie, en Afrique et en Amérique latine, le piment est considéré comme un aliment vital, souvent associé à la longévité et à la vitalité. Il apporte aussi une dimension sensorielle unique aux plats, rehaussant les saveurs et stimulant l’appétit. Le piment, lorsqu’il est intégré à une alimentation variée, devient ainsi un allié incontournable du bien-être et de la santé globale.
+  </p>
+    </div>
+    <div class="image">
+      <img src="81.webp" alt="Tomates fraîches riches en nutriments">
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="bienfait inverse">
+    <div class="image">
+      <img src="83.jpg" alt="Tomate et santé du cœur">
+    </div>
+    <div class="texte">
+      <h1>Les effets physiologiques de la capsaïcine : énergie, plaisir et équilibre</h1>
+      <p>
+        La capsaïcine, principale molécule active du piment, agit directement sur les récepteurs sensoriels de la bouche et du corps, déclenchant une sensation de chaleur et une libération d’endorphines. Ces hormones du bonheur procurent une sensation de bien-être, réduisent le stress et favorisent un état de détente naturelle. C’est pourquoi les amateurs de plats épicés décrivent souvent un sentiment d’énergie et de satisfaction après un repas pimenté.  
+    Sur le plan physiologique, la capsaïcine stimule la thermogenèse, c’est-à-dire la production de chaleur corporelle, ce qui accélère légèrement le métabolisme et augmente la dépense calorique. Ce phénomène explique en partie pourquoi le piment peut aider à la gestion du poids lorsqu’il est consommé régulièrement mais modérément. De plus, la capsaïcine a la capacité de réduire la sensation de faim pendant quelques heures, soutenant ainsi les efforts de contrôle alimentaire.  
+    Les propriétés anti-inflammatoires et analgésiques du piment sont également reconnues dans le domaine médical. On l’utilise dans certains traitements pour soulager les douleurs articulaires, musculaires et neuropathiques. En application externe, les crèmes à base de capsaïcine favorisent la détente musculaire et améliorent la circulation. En interne, la consommation régulière de piment peut contribuer à une meilleure santé vasculaire et à une réduction du taux de cholestérol.  
+    Sur le plan émotionnel, le piment agit comme un stimulant naturel : il éveille les sens, améliore la concentration et renforce le sentiment de vitalité. Dans de nombreuses cultures, il est considéré comme un symbole de force, d’énergie et de passion, représentant non seulement une saveur, mais aussi une véritable expérience de vie sensorielle et corporelle.
+  </p>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="bienfait">
+    <div class="texte">
+      <h1>Les bienfaits du piment sur la santé cardiovasculaire et la longévité</h1>
+      <p>
+         Consommer du piment régulièrement est bénéfique pour le cœur et le système circulatoire. Grâce à la capsaïcine, il améliore la fluidité du sang et prévient la formation de caillots, réduisant ainsi les risques d’accidents cardiovasculaires. La dilatation naturelle des vaisseaux sanguins qu’il provoque aide à faire baisser la pression artérielle, ce qui est essentiel pour prévenir l’hypertension. Des recherches récentes ont également montré que les personnes qui consomment du piment plusieurs fois par semaine ont une espérance de vie légèrement plus longue que celles qui n’en mangent pas.  
+    Le piment aide aussi à réguler le taux de sucre dans le sang, en ralentissant la libération du glucose après les repas, un atout précieux pour les personnes atteintes de diabète de type 2. Ses propriétés anti-inflammatoires contribuent à apaiser les réactions inflammatoires dans le corps, souvent responsables de nombreuses maladies chroniques. Par ailleurs, les antioxydants du piment jouent un rôle dans la protection des cellules cardiaques et la prévention du vieillissement prématuré.  
+    D’un point de vue digestif, le piment stimule la production de sucs gastriques, favorisant une meilleure digestion des aliments gras ou lourds. Contrairement aux idées reçues, il ne provoque pas d’ulcères lorsqu’il est consommé avec modération, mais il protège au contraire la muqueuse de l’estomac en stimulant la production de mucus protecteur.  
+    Enfin, le piment symbolise dans de nombreuses traditions la force vitale et l’énergie. Il incarne la chaleur, la passion et le mouvement, trois éléments essentiels à la vie. Manger du piment, c’est nourrir non seulement son corps, mais aussi son esprit, en apportant vitalité, énergie et équilibre. En somme, le piment n’est pas qu’un simple condiment : c’est un véritable allié du cœur, de la santé et du bien-être global.
+  
+      </p>
+    </div>
+    <div class="image">
+      <img src="88.png" alt="Tomate et soin de la peau">
+    </div>
+  </section>
+</main>
+
+   <section class="gallery">
+    <div class="card">
+      <img src="888.webp" alt="Image 1">
+      <div class="overlay">
+        <h2>Bon prix</h2>
+        <p>1000 XOF</p>
+        
+      </div>
+    </div>
+   
+    <section class="gallery">
+    <div class="card">
+      <img src="81.webp" alt="Image 1">
+      <div class="overlay">
+        <h2>Bon prix</h2>
+        <p>1500 XOF</p>
+        
+      </div>
+    </div>
+<section class="gallery">
+    <div class="card">
+      <img src="87.webp" alt="Image 1">
+      <div class="overlay">
+        <h2>Bon prix</h2>
+        <p>1000 XOF</p>
+        
+      </div>
+    </div>
+  </section>
+    <footer class="footer-white">
+    <div class="footer-container">
+      <!-- Logo et description -->
+      <div class="footer-section">
+        <h2 class="logo">Saveurs Naturelles</h2>
+        <p>
+          Découvrez nos produits faits à base de tomate, de piment et d’arachide — 
+          100% naturels, riches en goût et en bienfaits.
+        </p>
+      </div>
+
+      <!-- Liste des produits -->
+      <div class="footer-section">
+        <h3>Nos Produits</h3>
+        <ul class="product-list">
+          <li><a href="tomate.html">🍅 Purée de tomate fraîche</a></li>
+          <li><a href="piment.html">🌶 Sauce piment maison</a></li>
+          <li><a href="arachide.html">🥜 Pâte d’arachide naturelle</a></li>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="#" class="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="messenger" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+          <a href="#" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Saveurs Naturelles — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  </body>
+  </html>
